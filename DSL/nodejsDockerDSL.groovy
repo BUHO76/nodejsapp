@@ -16,7 +16,7 @@ job('Aplicacion Node.js Docker DSL') {
         dockerBuildAndPublish {
             repositoryName('BUHO76/nodejsapp')
             tag('${GIT_REVISION,length=7}')
-            registryCredentials('admin')
+            registryCredentials('buho76')
             forcePull(false)
             createFingerprints(false)
             skipDecorate()
